@@ -1,0 +1,48 @@
+/* Main CSS Entry Point */
+
+/* Base */
+@import 'base/_variables.css';
+@import 'base/_reset.css';
+@import 'base/_typography.css';
+
+/* Blocks (Components) - to be created */
+@import 'blocks/_header.css';
+@import 'blocks/_hero.css';
+@import 'blocks/_about.css';
+@import 'blocks/_feature_highlight.css';
+@import 'blocks/_services.css';
+@import 'blocks/_features_dark.css';
+@import 'blocks/_process.css';
+@import 'blocks/_projects.css';
+@import 'blocks/_contact.css';
+@import 'blocks/_news.css';
+@import 'blocks/_footer.css';
+@import 'base/_responsive.css';
+
+/* Utility / Layout */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn--icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

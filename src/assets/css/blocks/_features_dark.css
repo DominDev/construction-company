@@ -1,0 +1,81 @@
+/* Features Dark Section */
+.features-dark {
+    padding: var(--spacing-xl) 0;
+    background-color: #1a1a1a;
+    color: var(--color-white);
+}
+
+.features-dark__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.features-dark__title {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.features-dark__desc {
+    opacity: 0.8;
+    margin-bottom: var(--spacing-md);
+    max-width: 500px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.feature-item__icon {
+    font-size: 30px;
+    color: var(--color-primary);
+    min-width: 50px;
+    text-align: center;
+}
+
+.feature-item__content h4 {
+    color: var(--color-white);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.feature-item__content p {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.features-dark__actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.features-dark__image-side {
+    position: relative;
+    height: 500px; /* placeholder height */
+    background: #333;
+    background-image: url('https://placehold.co/600x800/222/fff?text=Industrial+Complex');
+    background-size: cover;
+}
+
+.features-overlay-card {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(27, 27, 27, 0.95);
+    padding: 20px;
+    max-width: 250px;
+    border-left: 3px solid var(--color-primary);
+}
+
+.features-overlay-card h4 {
+    color: var(--color-white);
+    margin-bottom: 5px;
+}
+.features-overlay-card p {
+    font-size: 0.8rem;
+    color: #ccc;
+}

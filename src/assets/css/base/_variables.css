@@ -1,0 +1,22 @@
+/* Variables */
+:root {
+    /* Colors */
+    --color-primary: #FF5E14; /* Orange from mockup */
+    --color-primary-hover: #e54b00;
+    --color-dark: #1B1B1B;
+    --color-dark-secondary: #222222;
+    --color-gray: #7a7a7a;
+    --color-light-gray: #f4f4f4;
+    --color-white: #ffffff;
+    
+    /* Typography */
+    --font-family-main: 'Inter', sans-serif;
+    
+    /* Spacing */
+    --container-width: 1200px;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+}

@@ -1,0 +1,119 @@
+.header {
+    width: 100%;
+    position: absolute;
+    top: 20px; /* Spacing from top as in mockup */
+    left: 0;
+    z-index: 100;
+    color: var(--color-white);
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.header.sticky {
+    position: fixed;
+    top: 0;
+    background-color: rgba(15, 22, 35, 0.95);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.header.sticky .header__main-inner {
+    padding: 10px 0; /* Compact padding */
+}
+
+.header__main-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: padding 0.3s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--color-white);
+    flex-shrink: 0;
+}
+
+.main-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 40px; /* Increased gap */
+}
+
+.nav__link {
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Dropdown arrow */
+.nav__item.has-dropdown .nav__link::after {
+    content: "▼";
+    font-size: 8px;
+    margin-left: 8px;
+    opacity: 0.7;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 15px;
+    margin-left: 5px;
+}
+
+.header__phone {
+    font-weight: 600;
+}
+
+.btn--header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.btn--header:hover {
+    background-color: var(--color-primary-hover);
+}

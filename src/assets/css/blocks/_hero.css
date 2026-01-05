@@ -1,0 +1,115 @@
+/* Hero */
+.hero {
+    position: relative;
+    height: 95vh; /* Adjusted height */
+    min-height: 700px;
+    background-color: #0f1623; /* Fallback */
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../../_docs/validus-industrial-mockup-001.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    padding: 0 var(--spacing-md);
+}
+
+.hero__container {
+    position: relative;
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.hero__title {
+    font-size: 4.5rem; /* Slightly larger */
+    font-weight: 800;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    color: var(--color-white);
+    max-width: 800px;
+}
+
+.hero__desc {
+    font-size: 1.1rem;
+    max-width: 550px;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.hero__actions {
+    display: flex;
+    gap: 20px;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--outline {
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+}
+.btn--outline:hover {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+
+/* Floating Cards at bottom */
+.hero__cards {
+    position: absolute;
+    bottom: -100px; /* Position relative to the container */
+    right: 0;
+    display: flex;
+    gap: 1px; /* The cards look merged */
+}
+
+.hero-card {
+    background-color: var(--color-dark-secondary);
+    width: 280px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Specific background images for cards */
+.hero-card:nth-child(1) {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.6) 30%, transparent), url('../../../_docs/validus-industrial-mockup-002.png');
+}
+.hero-card:nth-child(2) {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.6) 30%, transparent), url('../../../_docs/validus-industrial-mockup-003.png');
+}
+
+
+.hero-card__title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-white);
+    max-width: 120px;
+}
+
+.hero-card__arrow {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-card__arrow:hover {
+    background-color: var(--color-primary-hover);
+}

@@ -1,0 +1,147 @@
+.about {
+    padding: var(--spacing-xl) 0;
+    padding-top: 180px; /* Make space for overlapping hero cards */
+    background-color: var(--color-white);
+}
+
+.section-label {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-sm);
+    display: block;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--color-dark);
+    font-weight: 800;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+}
+
+.about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: flex-start; /* Align to top */
+}
+
+.about__text p {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-gray);
+    line-height: 1.7;
+}
+
+.check-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: var(--spacing-md) 0;
+}
+
+.check-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+.check-icon {
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-icon img {
+    width: 12px;
+    height: 12px;
+}
+
+.btn--dark {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+.btn--dark:hover {
+    background-color: #333;
+}
+.btn--icon span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__image {
+    position: relative;
+    background-image: url('https://i.imgur.com/6Xw2iA8.png'); /* World map overlay */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.about__image img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.about__image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    align-items: flex-start; /* Aligns items to the top */
+    padding: var(--spacing-md);
+}
+
+.video-btn {
+    position: absolute;
+    top: 60%; /* Positioned lower to match mockup */
+    left: -40px; /* Positioned to the left to match mockup */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 10px 20px rgba(255, 94, 20, 0.3);
+}
+
+.video-btn:hover {
+    transform: scale(1.1);
+}
+
+.video-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Spinning 'High Quality' circle */
+.about__image::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    height: 120px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath id='text-path' d='M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0' fill='none'/%3E%3Ctext font-family='sans-serif' font-size='11' font-weight='bold' fill='%23FF5E14'%3E%3CtextPath href='%23text-path' startOffset='50%25' text-anchor='middle'%3EManufacture ● High Quality Products ●%3C/textPath%3E%3C/text%3E%3C/svg%3E");
+    background-size: contain;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

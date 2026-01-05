@@ -1,0 +1,116 @@
+/* Feature Highlight (Environmental Sensitivity) */
+.feature-highlight {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    overflow: hidden;
+}
+
+/* Feature Highlight (Environmental Section) */
+.feature-highlight {
+    background-color: var(--color-dark); /* Fallback */
+}
+
+.feature-highlight__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 700px;
+}
+
+.feature-highlight__img {
+    background-image: url('../../../_docs/validus-industrial-mockup-003.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: var(--spacing-lg);
+}
+
+.feature-nav-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.feature-nav-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.feature-nav-btn:hover {
+    background-color: var(--color-light-gray);
+}
+.feature-nav-btn--next {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+.feature-nav-btn--next:hover {
+    background-color: #333;
+}
+
+
+.feature-highlight__content {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-highlight__title {
+    color: var(--color-white);
+    font-size: 3.5rem;
+}
+
+.feature-highlight__text {
+    line-height: 1.7;
+    max-width: 500px;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.feature-highlight__actions {
+    margin-top: var(--spacing-md);
+    display: flex;
+    gap: 20px;
+}
+
+.btn--white {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+.btn--white:hover {
+    background-color: var(--color-light-gray);
+}
+
+.btn--outline-white {
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+}
+.btn--outline-white:hover {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+.feature-highlight__deco-icon {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    opacity: 0.5;
+}
+
+
+.btn--outline-white:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+}
